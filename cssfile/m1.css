@@ -1,0 +1,256 @@
+.menuimg{
+    float:right;
+}
+
+[title="menu"]{
+    float: right;
+    margin-right: 0.28em;
+}
+
+body{
+    background-color:aliceblue;
+}
+
+.header1,.header2, .header3{
+    border: 8pt solid #38444c;
+    background-color: #38444c;
+    font-size:1.2em;
+    text-indent: 18px;
+    /* padding-top: 1em;
+    padding-bottom: 1em; */
+    height:78px;
+    position:relative;
+    color: white;
+    font-family:sans-serif;
+    /* font-size: 35px; */
+    /* text-size-adjust:x-large; */
+
+}
+
+
+.head1:before{
+    font-size:100%;
+    position:relative;
+    color: #fc6c44;
+    content:"Textbook ";
+
+}
+
+.head2:before{
+    font-size: 100%;
+    position:relative;
+    color: #fc6c44;
+    content:"Computing Science ";
+  
+}
+.head3:before{
+    font-size: 100%;
+    position:relative;
+    color: #fc6c44;
+    content:"Business ";
+
+}
+
+
+
+.pp{
+    color: red;
+    text-decoration: none;
+    
+}
+
+.popup{
+    display: none;
+}
+
+.thum li:hover .popup{
+    color: black;
+    display: block;
+}
+
+.menu-header{
+    font-size:1.2em;
+}
+
+.main-content{
+    margin-top: 1.5em;
+    width: 50%;
+    float: left;
+    clear: left;
+   
+}
+.main-content ,.main-menu p {
+    font-size: 0.98em;
+
+}
+
+.word-padding{
+    padding-left: 1.5em;
+}
+
+
+.main-menu{ 
+    margin-top: 1.7em;
+    width: 40%;
+    float: right;
+    clear: right;
+}
+
+.popup{
+    padding-left: 1em;
+}
+
+
+
+
+.normal1:hover,.normal2:hover,.normal3:hover,.last:hover{
+    box-shadow: 7px 10px 10px #9e9d9d;    
+}
+
+.figcap{
+    color:black;
+    font-family: sans-serif;
+    text-decoration: none;
+    font-size: 50pix;
+    margin-left: 1em;
+    margin-top: 1em;
+
+}
+
+figcaption{
+    /* display:flex; */
+    color:black;
+    text-decoration: none;
+    font-size: 50pix;
+    margin-left: 1em;
+    margin-top: 1em;
+    
+}
+
+.imagee{
+    width:100%;
+    height: auto;
+}
+
+.main-body2{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1%;
+}
+
+.alink{
+    text-decoration: none;
+    display:flex;
+    width:24.2%;
+
+}
+
+.normal1,.normal2,.normal3{
+
+
+    background-color: white;
+    width:100%;
+    margin: 0;
+    margin-top: 1.7em;   
+    padding-bottom: 2em;
+    box-shadow: 0 0 0;  
+    position:relative;
+   
+} 
+
+.last{
+    
+
+    box-shadow: 0 0 0;  
+    background-color: white;
+    width: 100%;
+    margin: 0;
+    margin-top: 1.7em;   
+    padding-bottom: 2em;
+    position:relative;
+
+}
+
+@media only screen and (max-width: 770px){
+
+    .alink{
+
+        width:49.5%;
+    }
+    .head2,.head3{
+
+        font-size: 1.1em;
+    
+    }
+
+ 
+  
+}
+
+@media only screen and (max-width: 480px){
+    .alink{
+        width:99.5%;
+    }
+
+    .head2,.head3{
+
+        font-size: 1em;
+    
+    }
+
+    
+     
+}
+
+.back-to-menu{
+    clear:left;
+    text-decoration: none;
+    color:rgb(134, 66, 66);
+    margin-top:2em;
+    margin-bottom:2em;
+    float:left;
+ 
+    
+}
+
+.see-more{
+    
+    color: white;
+    background-color: white;
+    border-radius: 4px;
+    font-weight: bold;
+    border:none;
+    padding: 11px 19px;
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+    transition: 0.8s;
+ 
+      
+}
+
+.normal1:hover .see-more,.normal2:hover .see-more,
+.normal3:hover .see-more, .last:hover .see-more{
+    /* visibility: visible; */
+    animation: fadeInAnimation 3s ease-in-out;
+    background-color: rgb(205, 85, 85);
+   
+}
+
+@keyframes fadeInAnimation{
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+
+@media only screen and (max-width: 550px) {
+    .main-content, .main-menu{
+        width: 100%;
+       
+    }
+    .head1{
+        font-size: 1.1em;
+    }
+}
+
+
